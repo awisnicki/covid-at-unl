@@ -12,7 +12,7 @@ var version = 'v1::';
    then the service worker won't be installed either.
 */
 var offlineFundamentals = [
-  '/',
+  'index.html',
   'sw.js',
   'scripts.js',
   'jquery-3.5.1.min'
