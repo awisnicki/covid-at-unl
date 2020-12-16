@@ -24,21 +24,21 @@ https://medium.com/hceverything/applying-srcset-choosing-the-right-sizes-for-res
 *****
 HEADER SLIDESHOW
 
-mogrify -format jpg -resize 1920x1920 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path /Users/awisnicki2/Desktop/covid-at-unl/images/new-img/1920 *.tif  && cd /Users/awisnicki2/Desktop/covid-at-unl/images/new-img/1920 && find . -exec rename 's|.jpg|-1920px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 1920x1920 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path /Users/awisnicki2/GitHub/covid-at-unl/images/new-img/1920 *.tif  && cd /Users/awisnicki2/GitHub/covid-at-unl/images/new-img/1920 && find . -exec rename 's|.jpg|-1920px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 1600x1600 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path /Users/awisnicki2/Desktop/covid-at-unl/images/new-img/1600 *.tif  && cd /Users/awisnicki2/Desktop/covid-at-unl/images/new-img/1600 && find . -exec rename 's|.jpg|-1600px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 1600x1600 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path /Users/awisnicki2/GitHub/covid-at-unl/images/new-img/1600 *.tif  && cd /Users/awisnicki2/GitHub/covid-at-unl/images/new-img/1600 && find . -exec rename 's|.jpg|-1600px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 1366x1366 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path /Users/awisnicki2/Desktop/covid-at-unl/images/new-img/1366 *.tif  && cd /Users/awisnicki2/Desktop/covid-at-unl/images/new-img/1366 && find . -exec rename 's|.jpg|-1366px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 1366x1366 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path /Users/awisnicki2/GitHub/covid-at-unl/images/new-img/1366 *.tif  && cd /Users/awisnicki2/GitHub/covid-at-unl/images/new-img/1366 && find . -exec rename 's|.jpg|-1366px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 1024x1024 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path /Users/awisnicki2/Desktop/covid-at-unl/images/new-img/1024 *.tif  && cd /Users/awisnicki2/Desktop/covid-at-unl/images/new-img/1024 && find . -exec rename 's|.jpg|-1024px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 1024x1024 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path /Users/awisnicki2/GitHub/covid-at-unl/images/new-img/1024 *.tif  && cd /Users/awisnicki2/GitHub/covid-at-unl/images/new-img/1024 && find . -exec rename 's|.jpg|-1024px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 992x992 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path /Users/awisnicki2/Desktop/covid-at-unl/images/new-img/992 *.tif  && cd /Users/awisnicki2/Desktop/covid-at-unl/images/new-img/992 && find . -exec rename 's|.jpg|-992px.jpg|' {} + && cd - &&
+mogrify -format jpg -resize 992x992 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path /Users/awisnicki2/GitHub/covid-at-unl/images/new-img/992 *.tif  && cd /Users/awisnicki2/GitHub/covid-at-unl/images/new-img/992 && find . -exec rename 's|.jpg|-992px.jpg|' {} + && cd - &&
 
-mogrify -format jpg -resize 768x768 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path /Users/awisnicki2/Desktop/covid-at-unl/images/new-img/768 *.tif  && cd /Users/awisnicki2/Desktop/covid-at-unl/images/new-img/768 && find . -exec rename 's|.jpg|-768px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 768x768 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path /Users/awisnicki2/GitHub/covid-at-unl/images/new-img/768 *.tif  && cd /Users/awisnicki2/GitHub/covid-at-unl/images/new-img/768 && find . -exec rename 's|.jpg|-768px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 480x480 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path /Users/awisnicki2/Desktop/covid-at-unl/images/new-img/480 *.tif  && cd /Users/awisnicki2/Desktop/covid-at-unl/images/new-img/480 && find . -exec rename 's|.jpg|-480px.jpg|' {} + && cd - && 
+mogrify -format jpg -resize 480x480 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path /Users/awisnicki2/GitHub/covid-at-unl/images/new-img/480 *.tif  && cd /Users/awisnicki2/GitHub/covid-at-unl/images/new-img/480 && find . -exec rename 's|.jpg|-480px.jpg|' {} + && cd - && 
 
-mogrify -format jpg -resize 320x320 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path /Users/awisnicki2/Desktop/covid-at-unl/images/new-img/320 *.tif  && cd ~/Desktop/test/320 && find . -exec rename 's|.jpg|-320px.jpg|' {} + && cd ..
+mogrify -format jpg -resize 320x320 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path /Users/awisnicki2/GitHub/covid-at-unl/images/new-img/320 *.tif  && cd ~/Desktop/test/320 && find . -exec rename 's|.jpg|-320px.jpg|' {} + && cd ..
 
 ****
 REGULAR IMAGES
@@ -51,25 +51,19 @@ REGULAR IMAGES
 640 = 592
 320 = 296
 
-296*, 432*, 592*, 622*, 864, 1244, 1640
+
+mogrify -format jpg -resize 1344x1344 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path /Users/awisnicki2/GitHub/covid-at-unl/images/new-img/1344 *.tif  && cd /Users/awisnicki2/GitHub/covid-at-unl/images/new-img/1344 && find . -exec rename 's|.jpg|-1344px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 1120x1120 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path /Users/awisnicki2/GitHub/covid-at-unl/images/new-img/1120 *.tif  && cd /Users/awisnicki2/GitHub/covid-at-unl/images/new-img/1120 && find . -exec rename 's|.jpg|-1120px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 957x957 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path /Users/awisnicki2/GitHub/covid-at-unl/images/new-img/957 *.tif  && cd /Users/awisnicki2/GitHub/covid-at-unl/images/new-img/957 && find . -exec rename 's|.jpg|-957px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 768x768 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path /Users/awisnicki2/GitHub/covid-at-unl/images/new-img/768 *.tif  && cd /Users/awisnicki2/GitHub/covid-at-unl/images/new-img/768 && find . -exec rename 's|.jpg|-768px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 732x732 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path /Users/awisnicki2/GitHub/covid-at-unl/images/new-img/732 *.tif  && cd /Users/awisnicki2/GitHub/covid-at-unl/images/new-img/732 && find . -exec rename 's|.jpg|-732px.jpg|' {} + && cd - && 
+
+mogrify -format jpg -resize 444x444 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path /Users/awisnicki2/GitHub/covid-at-unl/images/new-img/444 *.tif  && cd /Users/awisnicki2/GitHub/covid-at-unl/images/new-img/444 && find . -exec rename 's|.jpg|-444px.jpg|' {} + && cd - &&
+
+mogrify -format jpg -resize 284x284 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path /Users/awisnicki2/GitHub/covid-at-unl/images/new-img/284 *.tif  && cd ~/Desktop/test/284 && find . -exec rename 's|.jpg|-284px.jpg|' {} + && cd ..
 
 
-mogrify -format jpg -resize 1640x1640 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path /Users/awisnicki2/Dropbox/Professional/07-UndiscipliningVC/UVC-images+code/new/1640 *.tif  && cd /Users/awisnicki2/Dropbox/Professional/07-UndiscipliningVC/UVC-images+code/new/1640 && find . -exec rename 's|.jpg|-1640px.jpg|' {} + && cd - && 
-
-mogrify -format jpg -resize 1244x1244 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path /Users/awisnicki2/Dropbox/Professional/07-UndiscipliningVC/UVC-images+code/new/1244 *.tif  && cd /Users/awisnicki2/Dropbox/Professional/07-UndiscipliningVC/UVC-images+code/new/1244 && find . -exec rename 's|.jpg|-1244px.jpg|' {} + && cd - && 
-
-mogrify -format jpg -resize 864x864 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path /Users/awisnicki2/Dropbox/Professional/07-UndiscipliningVC/UVC-images+code/new/864 *.tif  && cd /Users/awisnicki2/Dropbox/Professional/07-UndiscipliningVC/UVC-images+code/new/864 && find . -exec rename 's|.jpg|-864px.jpg|' {} + && cd - && 
-
-mogrify -format jpg -resize 622x622 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path /Users/awisnicki2/Dropbox/Professional/07-UndiscipliningVC/UVC-images+code/new/622 *.tif  && cd /Users/awisnicki2/Dropbox/Professional/07-UndiscipliningVC/UVC-images+code/new/622 && find . -exec rename 's|.jpg|-622px.jpg|' {} + && cd - && 
-
-mogrify -format jpg -resize 592x592 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path /Users/awisnicki2/Dropbox/Professional/07-UndiscipliningVC/UVC-images+code/new/592 *.tif  && cd /Users/awisnicki2/Dropbox/Professional/07-UndiscipliningVC/UVC-images+code/new/592 && find . -exec rename 's|.jpg|-592px.jpg|' {} + && cd - && 
-
-mogrify -format jpg -resize 432x432 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path /Users/awisnicki2/Dropbox/Professional/07-UndiscipliningVC/UVC-images+code/new/432 *.tif  && cd /Users/awisnicki2/Dropbox/Professional/07-UndiscipliningVC/UVC-images+code/new/432 && find . -exec rename 's|.jpg|-432px.jpg|' {} + && cd - && 
-
-mogrify -format jpg -resize 296x296 -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace RGB -path /Users/awisnicki2/Dropbox/Professional/07-UndiscipliningVC/UVC-images+code/new/296 *.tif  && cd ~/Desktop/test/296 && find . -exec rename 's|.jpg|-296px.jpg|' {} + && cd /Users/awisnicki2/Dropbox/Professional/07-UndiscipliningVC/UVC-images+code/new 
-
-****
-
-find . -type f -name \*.jpg -exec mv \{\} ~/GitHub/undiscipliningvc/images \;
-
-src="images/uvc_0005-deriv-1824px.jpg" srcset="images/uvc_0005-deriv-1824px.jpg 1824w, images/uvc_0005-deriv-1384px.jpg 1384w, images/uvc_0005-deriv-1184px.jpg 1184w, images/uvc_0005-deriv-912px.jpg 912w, images/uvc_0005-deriv-692px.jpg 692w, images/uvc_0005-deriv-592px.jpg 592w, images/uvc_0005-deriv-296px.jpg 296w" sizes="(min-width: 992px) 692px, calc(100vw - 32px)"
