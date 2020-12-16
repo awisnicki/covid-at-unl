@@ -13,9 +13,9 @@ var version = 'v1::';
 */
 var offlineFundamentals = [
   '/',
-  '/sw.js',
-  '/scripts.js',
-  '/jquery-3.5.1.min'
+  'sw.js',
+  'scripts.js',
+  'jquery-3.5.1.min'
 ];
 
 /* The install event fires when the service worker is first installed.
