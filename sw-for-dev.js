@@ -12,6 +12,7 @@ var version = 'v1::';
    then the service worker won't be installed either.
 */
 var offlineFundamentals = [
+  '/covid-at-unl/',
   'index.html',
   'sw.js',
   'scripts.js',
