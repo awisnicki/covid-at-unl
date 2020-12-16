@@ -52,7 +52,6 @@
 				padding-bottom: .5em;
 			}
 			header{
-				background-color: white;
 				text-align: center;
 				position: relative;
 			}
@@ -72,13 +71,12 @@
 				}
 			@media only screen and (min-width: 992px){
 				main{
-					font-size: 1.2em;
 					max-width: 40em;
 				}
 			}
 			@media only screen and (min-width: 1366px){
 				main{
-					font-size: 1.3em;
+					font-size: 1.2em;
 					max-width: 70%;
 				}
 			}
@@ -87,7 +85,7 @@
 				font-family: Arial, Geneva, Tahoma, sans-serif;
 				text-align: center;
 				line-height: 1.6em;
-				margin: 2em .75em;
+				margin: 1em .75em;
 			}
 			h1,
 			h2{
@@ -162,7 +160,10 @@
 				max-width: 100%;
 			}
 			.image-wrapper{
-				position: relative;
+				font-size: 1em;
+			}
+			.image-border{
+				border: 1px solid gray;
 			}
 			header img{
 				width: 100vw;
@@ -176,30 +177,32 @@
 				min-height: 100vh;
 			}
 			.caption{
-				font-size: .75em;
+				font-size: .68em;
 				font-weight: normal;
-				font-family: Arial, Geneva, Tahoma, sans-serif;
+				/* font: 16px Arial, Geneva, Tahoma, sans-serif; */
+				line-height: 1.4em;
 				text-align: left;
-				bottom: -40px;
-				right: 6px;
-				left: 6px;
-				transform: translate(0, 5%);
-				position: absolute;
+				float: right;
+				padding: 0 .5em 2em .5em;
+				margin: 0 auto;
+			}
+			header .caption{
+				font-size: .75em;
 			}
 			@media only screen and (min-width: 768px){
 				.caption{
-					right: 1%;
-					bottom: -3%;
-					left: unset;
-					transform: translate(-1%, 3%);
+					font-size: .77em;
+				}
+				header .caption{
+					font-size: .85em;
 				}
 			}
-			@media only screen and (min-width: 768px){
+			@media only screen and (min-width: 1366px){
 				.caption{
 					font-size: .85em;
-					right: 1%;
-					bottom: -4%;
-					transform: translate(-1%, 4%);
+				}
+				header .caption{
+					font-size: 1.1em;
 				}
 			}
 			*:focus{
@@ -214,12 +217,16 @@
 				color: white;
 				background-color: #03738C;
 			}
-			hr{
+			p{
+				clear: both;
+			}
+			hr.divider{
 				background-color: gray;
 				height: 1px;
 				border: 0;
 				width: 100%;
 				max-width: 100%;
+				margin: 3em 0;
 			}
 			ol,
 			ul{
@@ -273,7 +280,7 @@
 		<article>
 
 			<header id="title-div">
-				<img class="content-holder-1" src="images/kelly-image-prod-1920px.jpg" srcset="images/kelly-image-prod-1600px.jpg 1600w, images/kelly-image-prod-1366px.jpg 1366w, images/kelly-image-prod-1024px.jpg 1024w, images/kelly-image-prod-768px.jpg 768w, images/kelly-image-prod-640px.jpg 640w, images/kelly-image-prod-320px.jpg 320w" sizes="100vw" alt="Collection of signs near sidewalk with Sheldon Museum in background." title="William Kelly, “Collection of Signs Near Sheldon on Campus Edge,” Coronavirus in Lincoln, accessed December 16, 2020, https://coronavirusoncampus.omeka.net/items/show/3. William Kelly, image rights." />
+				<img class="content-holder-1" src="images/kelly-image-1920px.jpg" srcset="images/kelly-image-1920px.jpg 1920w, images/kelly-image-1600px.jpg 1600w, images/kelly-image-1366px.jpg 1366w, images/kelly-image-1024px.jpg 1024w, images/kelly-image-768px.jpg 768w, images/kelly-image-640px.jpg 640w, images/kelly-image-320px.jpg 320w" sizes="100vw" alt="Collection of signs near sidewalk with Sheldon Museum in background." title="William Kelly, “Collection of Signs Near Sheldon on Campus Edge,” Coronavirus in Lincoln, accessed December 16, 2020, https://coronavirusoncampus.omeka.net/items/show/3. William Kelly, image rights." />
 				
 				<p class="caption">William Kelly, “<a href="https://coronavirusoncampus.omeka.net/items/show/3">Collection of Signs Near Sheldon on Campus Edge</a>,” 2020. William Kelly, image rights.</p>
 				
@@ -285,8 +292,6 @@
 				
 				<section aria-labelledby="overview">
 					<h3 id="overview">Overview</h3>
-
-					<img class="content-holder-1" src="images/kelly-image-prod-1920px.jpg" srcset="images/kelly-image-prod-1600px.jpg 1600w, images/kelly-image-prod-1366px.jpg 1366w, images/kelly-image-prod-1024px.jpg 1024w, images/kelly-image-prod-768px.jpg 768w, images/kelly-image-prod-640px.jpg 640w, images/kelly-image-prod-320px.jpg 320w" sizes="100vw" alt="Collection of signs near sidewalk with Sheldon Museum in background." title="William Kelly, “Collection of Signs Near Sheldon on Campus Edge,” Coronavirus in Lincoln, accessed December 16, 2020, https://coronavirusoncampus.omeka.net/items/show/3. William Kelly, image rights." />
 
 					<p>The student projects collected here result from “Digital Project Development” (ENGL 4/877), a course that <a href="https://cdrh.unl.edu/about/faculty/wisnicki">Adrian S. Wisnicki</a>, an Associate Professor of English, taught at the <a href="https://www.unl.edu/">University of Nebraska-Lincoln</a> (UNL) in 2020. Together, the projects provide a unique, student-centered perspective on how the pandemic changed campus.</p>
 
@@ -306,18 +311,27 @@
 					</ul>
 					
 					<p>Their projects reflect all of this work.</p>
+
+					<div class="image-wrapper">
+						<img class="image-border" src="images/durham-image-1344px.jpg" srcset="images/durham-image-1344px.jpg 1344w, images/durham-image-1120px.jpg 1120w, images/durham-image-957px.jpg 957w, images/durham-image-768px.jpg 768w, images/durham-image-732px.jpg 732w, images/durham-image-444px.jpg 444w, images/durham-image-284px.jpg 284w" sizes="" alt="Drawing in purple, pink, and orange; includes buses and various outside landmarks." title="Ella Durham, “Drawn Visualization No. 02,” 2020. Anti-copyright." />
+						<p class="caption">Ella Durham, “Drawn Visualization No. 02,” 2020. Anti-copyright.</p>
+					</div>
 					
 					<p>Students also developed the projects with close attention to <a href="https://go-dh.github.io/mincomp/thoughts/2016/10/02/minimal-definitions/">minimal computing methodologies</a> and with consideration of the many questions posed by the <a href="http://criticaldh.roopikarisam.com/">Social Justice and Digital Humanities</a> website. So the students worked with what they had at hand, within their means and the many limits created by the pandemic, but did so in a mindful, critical, self-reflective way.</p>
 					
 					<p>By design, their projects take a modular form, which each centered on a home page (usually in Wordpress), then distributed over a variety of other commercial and non-commercial sites such as <a href="https://www.flickr.com/">Flickr</a>, <a href="https://omeka.org/">Omeka</a>, <a href="https://storymap.knightlab.com/">StoryMapJS</a>, and <a href="https://github.com/">GitHub</a>.</p>
 					
-					<p>Given the challenges posed by the 2020 semester, the student projects represent a significant course-based accomplishment, one that now – in the aggregate – is it an important educational resource for others. Please feel free to browse their projects.</p>					
+					<p>Given the challenges posed by the 2020 semester, the student projects represent a significant course-based accomplishment, one that now – in the aggregate – is it an important educational resource for others. Please feel free to browse their projects.</p>		
+
+					<div class="image-wrapper">
+						<img class="" src="images/j-matheis-image-1344px.jpg" srcset="images/j-matheis-image-1344px.jpg 1344w, images/j-matheis-image-1120px.jpg 1120w, images/j-matheis-image-957px.jpg 957w, images/j-matheis-image-768px.jpg 768w, images/j-matheis-image-732px.jpg 732w, images/j-matheis-image-444px.jpg 444w, images/j-matheis-image-284px.jpg 284w" sizes="" alt="Empty hallway with floor marker for social distancing. Box of facemasks with instructions." title="(Left) Zach J, “Empty Hallway,” 2020. Zach J., all rights reserved. (Right) Caitling Matheis, “Face Masks and Face Covering Guidelines,” 2020. Caitlin Matheis all rights reserved." />
+						<p class="caption">(Left) Zach J, “Empty Hallway,” 2020. Zach J., all rights reserved. (Right) Caitlin Matheis, “Face Masks and Face Covering Guidelines,” 2020. Caitlin Matheis, all rights reserved.</p>
+					</div>
 				</section>
 
-				<div class="image-wrapper">
-					<img class="" src="images/durham-image-prod-1344px.jpg" srcset="images/durham-image-prod-1344px.jpg 1344w, images/durham-image-prod-1366px.jpg 1366w, images/durham-image-prod-1120px.jpg 1120w, images/durham-image-prod-957px.jpg 957w, images/durham-image-prod-768px.jpg 768w, images/durham-image-prod-732px.jpg 732w, images/durham-image-prod-444px.jpg 444w, images/durham-image-prod-284px.jpg 284w" sizes="" alt="Drawing in purple, pink, and orange; includes buses and various outside landmarks." title="Ella Durham, “Drawn Visualization No. 02,” 2020. Anti-copyright." />
-					<p class="caption">Ella Durham, “Drawn Visualization No. 02,” 2020. Anti-copyright.</p>
-				</div>
+				<br/>
+				<hr class="divider"/>
+				
 				
 				<section aria-labelledby="projects">
 					<h3 id="projects">Student Projects</h3>
@@ -343,11 +357,6 @@
 					</ol>					
 				
 				</section>
-
-				<div class="image-wrapper">
-					<img class="" src="images/j-matheis-images-prod-1344px.jpg" srcset="images/j-matheis-images-prod-1344px.jpg 1344w, images/j-matheis-images-prod-1366px.jpg 1366w, images/j-matheis-images-prod-1120px.jpg 1120w, images/j-matheis-images-prod-957px.jpg 957w, images/j-matheis-images-prod-768px.jpg 768w, images/j-matheis-images-prod-732px.jpg 732w, images/j-matheis-images-prod-444px.jpg 444w, images/j-matheis-images-prod-284px.jpg 284w" sizes="" alt="Empty hallway with floor marker for social distancing. Box of facemasks with instructions." title="(Left) Zach J, “Empty Hallway,” 2020. Zach J., all rights reserved. (Right) Caitling Matheis, “Face Masks and Face Covering Guidelines,” 2020. Caitlin Matheis all rights reserved." />
-					<p class="caption">(Left) Zach J, “Empty Hallway,” 2020. Zach J., all rights reserved. (Right) Caitlin Matheis, “Face Masks and Face Covering Guidelines,” 2020. Caitlin Matheis, all rights reserved.</p>
-				</div>
 
 			</main>
 			<footer class="footer" id="footer-div">
