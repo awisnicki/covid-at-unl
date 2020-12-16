@@ -20,7 +20,6 @@
 		<link rel="preload" as="font" type="font/woff" crossorigin href="fonts/phillysans-webfont.woff"/>
 		<link rel="preload" as="font" type="font/woff2" crossorigin href="fonts/sourcesanspro-regular-webfont.woff2"/>
 		<link rel="preload" as="font" type="font/woff" crossorigin href="fonts/sourcesanspro-regular-webfont.woff"/>
-		<script src="scripts.js"></script> 
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async='' src="https://www.googletagmanager.com/gtag/js?id=UA-31768072-7"></script>
 		<script>
@@ -317,6 +316,30 @@
                 <p>&#169; 2020-2021, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> | Developer: <a href="mailto:awisnicki2@unl.edu">Adrian S. Wisnicki</a> (University of Nebraska-Lincoln)</p>
             </footer>
 		</article>
+		<script>
+			/* Service Worker */
+			/* Taken from https://pwa-workshop.js.org/2-service-worker/#registering-the-service-worker */
+			if ("serviceWorker" in navigator) {
+				navigator.serviceWorker
+				.register("sw.js")
+				.then(serviceWorker => {
+					console.log("Service Worker registered: ", serviceWorker);
+				})
+				.catch(error => {
+					console.error("Error registering the Service Worker: ", error);
+				});
+			}			
+		</script>
+		<script>
+			AddRelNoopener();
+			
+			function AddRelNoopener(){
+				var links = document.querySelectorAll("a");
+				for(var i = 0; i < links.length; i++){
+				links[i].setAttribute("rel","noopener");
+				}
+			}				
+		</script>
 	</body>
 
 </html>
