@@ -18,12 +18,24 @@
 		<link rel="preload" as="font" type="font/woff2" crossorigin href="fonts/sourcesanspro-regular-webfont.woff2"/>
 		<link rel="preload" as="font" type="font/woff" crossorigin href="fonts/sourcesanspro-regular-webfont.woff"/>
 		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async='' src="https://www.googletagmanager.com/gtag/js?id=UA-31768072-5"></script>
+		<script async='' src="https://www.googletagmanager.com/gtag/js?id=UA-31768072-7"></script>
 		<script>
 			window.dataLayer = window.dataLayer || [];
 			function gtag(){dataLayer.push(arguments);}
 			gtag('js', new Date());
-			gtag('config', 'UA-31768072-5');
+			gtag('config', 'UA-31768072-7');
+		</script>
+		<script type="text/javascript">
+			if ("serviceWorker" in navigator) {
+			navigator.serviceWorker
+				.register("/sw.js")
+				.then(serviceWorker => {
+				console.log("Service Worker registered: ", serviceWorker);
+				})
+				.catch(error => {
+				console.error("Error registering the Service Worker: ", error);
+				});
+			}
 		</script>
 		<style>
 			html{
@@ -314,18 +326,6 @@
             </footer>
             
 		</article>
-		<script type="text/javascript">
-			if ("serviceWorker" in navigator) {
-			navigator.serviceWorker
-				.register("/sw.js")
-				.then(serviceWorker => {
-				console.log("Service Worker registered: ", serviceWorker);
-				})
-				.catch(error => {
-				console.error("Error registering the Service Worker: ", error);
-				});
-			}
-		</script>
 		<script>
 			AddRelNoopener();
 
